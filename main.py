@@ -15,6 +15,9 @@ for index, row in read_csv.iterrows():
     pdf.cell(w=30, h=12, txt=row["Topic"], align="L", ln=0 )
     pdf.line(10, 21, 200, 21)
 
+    for i in range(33, 280, 10):
+        pdf.line(10, i, 200, i)
+
     #Set the footer
     pdf.ln(275)
     pdf.set_text_color(180,180,180)
